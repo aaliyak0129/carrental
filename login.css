@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+background-image: url(./image/DALL·E\ 2025-02-20\ 01.41.48\ -\ A\ modern\ city\ skyline\ with\ tall\ buildings\ and\ a\ partly\ cloudy\ sky\,\ designed\ as\ a\ desktop\ wallpaper.\ The\ buildings\ showcase\ a\ mix\ of\ glass\ skyscrapers\ .webp);  
+background-size: cover;
+}
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .login-box {
+    background: rgba(4, 1, 12, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid#a20409;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(32, 4, 90, 0.1);
+    width: 350px;
+    box-shadow: 0 0 20px#a20409, 0 0 40px , 0 0 60px #a20409;
+    text-align: center;
+        transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.5s ease-in-out;
+  animation: floating 3s infinite ease-in-out alternate;
+  }
+  
+  .title {
+    color: #a20409;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .input-group label {
+    color: #a20409;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(246, 5, 5, 0.2);
+    color: white;
+    outline: none;
+  }
+  
+  .input::placeholder {
+    color: rgba(255, 7, 7, 0.6);
+  }
+  
+  .submit-btn {
+    width: 100%;
+    background:#a20409;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background: #6b6969;
+    color: #a20409;
+  }
+  
+  .signup-text {
+    color: rgba(227, 134, 134, 0.979);
+font-weight: bolder;
+    margin-top: 1rem;
+  }
+  
+  .signup-link {
+    color: #a20409;
+    text-decoration: none;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  
+@keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-15px);
+    }
+  }
+  @keyframes neonGlow {
+    0% {
+      box-shadow: 0 0 20px rgba(255, 0, 0, 1), 0 0 40px rgba(255, 0, 0, 0.8), 0 0 60px rgba(255, 0, 0, 0.6);
+    }
+    100% {
+      box-shadow: 0 0 30px rgba(255, 0, 0, 1), 0 0 50px rgba(255, 0, 0, 0.9), 0 0 70px rgba(255, 0, 0, 0.7);
+    }
+  }

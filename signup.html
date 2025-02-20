@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="./signup.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Left Section (Car Image) -->
+    <div class="image-section">
+        <img src="./image/d7123955-9f60-4752-87ca-49e08ba639a8.webp" alt="Car Image">
+    </div>
+
+    <!-- Right Section (Form) -->
+    <div class="form-section">
+        <h1>Sign Up</h1>
+        <p>Enter your details to SIGN UP</p>
+ <form>
+      
+        <p id="errname"></p>
+        ENTER NAME: <input type="text" id="name" placeholder="Enter your name">  <br> 
+        <p id="erremail"></p>
+      ENTER EMAIL: <input type="text" id="email" placeholder="Enter your email">  <br> 
+        <p id="errnum"></p>
+       ENTER NUMBER: <input type="text" id="number" placeholder="Enter your number">  <br> 
+        <p id="errpass"></p>
+        ENTER PASSWORD: <input type="text" id="pass" placeholder="Enter password">  <br> 
+        <p id="errcpass"></p>
+        CONFIRM PASSWORD : <input type="text" id="cpass" placeholder="Confirm pasword">  <br> 
+            <input type="submit" value="SUBMIT" onclick="return sub()" class="btn">
+        </form>      
+        </form>
+    </div>
+</div>
+
+<script src="./signup.js"></script>
+
+</body>
+</html>

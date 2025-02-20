@@ -1,0 +1,86 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+h1{
+    color: #a20409;
+    font-size: 50px;
+}
+p{
+    color: #a20409;
+}
+/* Full-screen layout */
+.container {
+    display: flex;
+    height: 10h;
+    width: 100vw;
+  
+}
+
+/* Left Section (Image) */
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Right Section (Form) */
+.form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Form Box */
+.form-box {
+    width: 80%;
+    max-width: 40px;
+    background:#fce656;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #447444;
+    text-align: center;
+}
+
+/* Form Inputs */
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 8px 0;
+    border: 2px solid #447444;
+background-color: #b4a48c;
+    border-radius: 5px;
+    font-size: 16px;
+}
+/* Submit & Social Buttons */
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+ font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: #b4a48c;
+    background-color: #a20409;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #b4a48c;
+    color: #a20409;
+}
+
