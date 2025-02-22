@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./home.css">
-    <title>Navbar with Buttons</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+   
+<title>Navbar with Buttons</title>
 </head>
 <body>
 
 <header>
+  <div data-aos="fade-down" data-aos-duration="2000">
     <nav>
+  
+
         <div class="logocontainer">
             <img src="./image/l1.png" alt="Company Logo" class="logo">
             <span class="companyname">DESTINY DRIVE RENTALS</span>
+
         </div>
         <!-- Hamburger Icon -->
         <div class="menu-toggle" onclick="toggleMenu()">
@@ -32,15 +44,314 @@
             <a href="./signup.html"><button class="signupbtn">Sign Up</button></a>
         </div>
     </nav>
+  </div>
 </header>
+<!-- <div class="banner">
+      <div data-aos="fade-up"  data-aos-duration="2000">
+       <video src="./video/v2 red car.mp4" autoplay loop muted>
+      <div class="videotext"><h1>aaliya</h1></div>
+</div></div></div></video> -->
 <div class="banner">
-    <video src="./video/v2 red car.mp4" autoplay loop muted></video>
+  <div data-aos="fade-up" data-aos-duration="2000" style="position: relative;">
+      <video src="./video/v2 red car.mp4" autoplay loop muted style="width: 100%; display: block;"></video>
+      <div class="videotext">
+        <div data-aos="fade-right" data-aos-duration="4000">
+          <h1>aaliya</h1>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+<!-- <form class="booking-form">
+  <div>
+      <label>Name</label>
+      <input type="text" placeholder="Your Name">
+  </div>
+  <div>
+      <label>Phone Number</label>
+      <input type="text" placeholder="Telephone">
+  </div>
+  <div>
+      <label>Passengers</label>
+      <input type="number" placeholder="Passengers">
+  </div>
+  <div>
+      <label>Pick Up Date</label>
+      <input type="date">
+  </div>
+  <div>
+      <label>Vehicle</label>
+      <select>
+          <option>Select Vehicle</option>
+          <option>Car</option>
+          <option>Van</option>
+          <option>Luxury</option>
+      </select>
+  </div>
+  <div>
+      <label>Pick Up Address</label>
+      <input type="text" placeholder="Start Destination">
+  </div>
+  <div>
+      <label>Drop Off Address</label>
+      <input type="text" placeholder="End Destination">
+  </div>
+  <div class="full-width">
+      <button type="submit">Book Taxi Now</button>
+  </div>
+</form> -->
 <div class="us">
-    <h3>WHAT WE OFFER </h3>
-    <H1>WE OFFER BEST FOR YOU</H1>
+  <h3>WHAT WE OFFER </h3>
+    <h2>WE OFFER BEST FOR YOU</h2>
+    <div class="off">
+  
+      <div data-aos="fade-up"
+     data-aos-duration="3000">
+    <div class="security" style="display: flex; gap: 20px; justify-items: center; align-items: center; justify-content: center; margin-top: 20px; ">
+      <!-- First Box -->
+
+      <div style="width: 300px;height: 175px; background: white; color: #a20409; padding: 20px; border-radius: 12px; text-align: left; font-family: Arial, sans-serif; border: 2px solid black;">
+          <div style="display: flex; align-items: center;">
+
+              <div style=" padding: 10px; border-radius: 8px;">
+                  <img src="./image/ruppe.png" alt="Icon" width="30px">
+              </div>
+              <h3 style="margin-left: 10px;">Support All Payment</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <hr style="border: 0.5px solid #444; margin: 10px 0;">
+          <div style="display: flex; gap: 10px;">
+              <img src="./image/vi9sa.png" alt="Visa" width="40px">
+              <img src="./image/mc.png" alt="Mastercard" width="40px">
+              <img src="./image/ap.png" alt="Apple Pay" width="40px">
+              <img src="./image/Paypal-Logo-2022.png" alt="PayPal" width="40px">
+            </div>
+      </div>
+      
+      <!-- Second Box -->
+      <div style="width: 300px; background: #a20409; color: black; padding: 20px; border: 2px solid black;border-radius: 12px; text-align: left; font-family: Arial, sans-serif;">
+          <div style="display: flex; align-items: center;">
+              <div style=" padding: 10px; border-radius: 8px;">
+                  <img src="./image/sheild.jpeg" alt="Icon" width="38px">
+              </div>
+              <h3 style="margin-left: 10px; color: #ddd;">Safety First</h3>
+          </div>
+          <p> Lorem ipsum dolor sit amet.</p>
+          <hr style="border: 0.5px solid black; margin: 10px 0;">
+          <div style="display: flex; gap: 10px;">
+              <img src="./image/g.png" alt="Guarantee" width="40px">
+              <img src="./image/t.png" alt="Quick Ride" width="40px">
+          </div>
+      </div>
+      
+      <!-- Third Box -->
+      <div style="width: 300px; border: 2px solid black;background: #ffffff; color: black; padding: 20px; border-radius: 12px; text-align: left; font-family: Arial, sans-serif; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+          <div style="display: flex; align-items: center;">
+              <div style="background: #fbfbfa; padding: 10px; border-radius: 8px;">
+                  <img src="./image/phone.png" alt="Icon" width="50px">
+              </div>
+              <h3 style="margin-left: 10px;">100% Digital</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <hr style="border: 0.5px solid #ddd; margin: 10px 0;">
+          <div style="display: flex; gap: 10px;">
+              <img src="./image/ap.png" alt="Apple" width="60px">
+              <img src="./image/and.png" alt="Android" width="40px">
+          </div>
+      </div>
+  </div>
+</div>
+
+</div>
+    <h1> WIDE RANGE OF PREMIUM CARS</h1>
    
 </div>
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide ">
+        <div class="car-box">
+        <img src="./image/c1.webp"/>
+        <!-- <h2><i class="fas fa-car icon"><h2></h2></i> BMW Z4</h2>
+                <p class="details"><i class="fas fa-cogs icon"></i> Coupe • 2007</p>
+                <p class="price"><i class="fas fa-rupee-sign icon"></i> 50,000/day</p>
+                <p class="details"><i class="fas fa-road icon"></i> 15K mi • <i class="fas fa-gas-pump icon"></i> 4.0 L TDI+ • Gasoline • Automatic</p>
+                <p class="details"><i class="fas fa-map-marker-alt icon"></i> City:Bhopal | <i class="fas fa-user icon"></i> Agent: Fiona Lewis</p> -->
+      </div>
+    </div>
+      <div class="swiper-slide">
+        <img src="./image/DALL·E 2025-02-22 22.40.40 - A high-end luxury car parked in a scenic location, featuring a sleek design, glossy black paint, and elegant chrome detailing. The car has a futuristi.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./image/c2.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./image/c4.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./image/c6.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./image/c7.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./image/c9.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./image/c8.webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./image/c7.webp" />
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="car-section">
+    <div class="car-card">
+      <div data-aos="fade-up"data-aos-duration="2000">
+        <img src="./image/c3.webp" alt="Mercedes Grand Sedan">
+        <div class="car-info">
+            <h3>Mercedes Grand Sedan</h3>
+            <p class="brand">Cheverolet</p>
+            <p class="price"><span>₹500</span> /day</p>
+            <div class="buttons">
+                <button class="book">Book now</button>
+                <button class="details">Details</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <div data-aos="fade-up"data-aos-duration="2000">
+
+        <img src="./image/c2.webp" alt="Range Rover">
+        <div class="car-info">
+            <h3>Range Rover</h3>
+            <p class="brand">Subaru</p>
+            <p class="price"><span>₹500</span> /day</p>
+            <div class="buttons">
+                <button class="book">Book now</button>
+                <button class="details">Details</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="car-card">
+      <div data-aos="fade-up"data-aos-duration="2000">
+
+        <img src="./image/c1.webp" alt="Mercedes Grand Sedan">
+        <div class="car-info">
+            <h3>Mercedes Grand Sedan</h3>
+            <p class="brand">Cheverolet</p>
+            <p class="price"><span>₹500</span> /day</p>
+            <div class="buttons">
+                <button class="book">Book now</button>
+                <button class="details">Details</button>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="car-section">
+<div class="car-card">
+  <div data-aos="fade-up"data-aos-duration="2000">
+    <img src="./image/c3.webp" alt="Mercedes Grand Sedan">
+    <div class="car-info">
+        <h3>Mercedes Grand Sedan</h3>
+        <p class="brand">Cheverolet</p>
+        <p class="price"><span>₹500</span> /day</p>
+        <div class="buttons">
+            <button class="book">Book now</button>
+            <button class="details">Details</button>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="car-card">
+  <div data-aos="fade-up"data-aos-duration="2000">
+    <img src="./image/c3.webp" alt="Mercedes Grand Sedan">
+    <div class="car-info">
+        <h3>Mercedes Grand Sedan</h3>
+        <p class="brand">Cheverolet</p>
+        <p class="price"><span>₹500</span> /day</p>
+        <div class="buttons">
+            <button class="book">Book now</button>
+            <button class="details">Details</button>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="car-card">
+  <div data-aos="fade-up"data-aos-duration="2000">
+    <img src="./image/c3.webp" alt="Mercedes Grand Sedan">
+    <div class="car-info">
+        <h3>Mercedes Grand Sedan</h3>
+        <p class="brand">Cheverolet</p>
+        <p class="price"><span>₹500</span> /day</p>
+        <div class="buttons">
+            <button class="book">Book now</button>
+            <button class="details">Details</button>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="car-section">
+  <div class="car-card">
+    <div data-aos="fade-up"data-aos-duration="2000">
+      <img src="./image/c3.webp" alt="Mercedes Grand Sedan">
+      <div class="car-info">
+          <h3>Mercedes Grand Sedan</h3>
+          <p class="brand">Cheverolet</p>
+          <p class="price"><span>₹500</span> /day</p>
+          <div class="buttons">
+              <button class="book">Book now</button>
+              <button class="details">Details</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="car-card">
+    <div data-aos="fade-up"data-aos-duration="2000">
+      <img src="./image/c3.webp" alt="Mercedes Grand Sedan">
+      <div class="car-info">
+          <h3>Mercedes Grand Sedan</h3>
+          <p class="brand">Cheverolet</p>
+          <p class="price"><span>₹500</span> /day</p>
+          <div class="buttons">
+              <button class="book">Book now</button>
+              <button class="details">Details</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="car-card">
+    <div data-aos="fade-up"data-aos-duration="2000">
+      <img src="./image/c3.webp" alt="Mercedes Grand Sedan">
+      <div class="car-info">
+          <h3>Mercedes Grand Sedan</h3>
+          <p class="brand">Cheverolet</p>
+          <p class="price"><span>₹500</span> /day</p>
+          <div class="buttons">
+              <button class="book">Book now</button>
+              <button class="details">Details</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./Swipper.js"> </script>
 <script src="./home.js"></script>
 </body>
 </html>

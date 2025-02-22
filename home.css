@@ -14,8 +14,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     /* padding: 10px 15px;  */
-  background-color:black;
-  width:auto;
+  background-color:black; 
   object-fit: cover;
 
 }
@@ -133,6 +132,186 @@ background-color: #a20409;
 .us{
     text-align: center;
 }
+
+.swiper {
+      width: 100%;
+      height: 600px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px !important;
+      height: 300px !important;
+     
+    }
+    /* .car-box {
+        border: 2px solid black; 
+        border-radius: 10px;       
+        padding: 15px;           
+        margin: 10px;            
+        width: 320px;              
+        text-align: center;        
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+        } */
+.swiper-slide img {
+      display:block;
+      width: 100%;
+      object-fit: cover;
+      height: 300px;
+    }
+h1{
+    font-size: 50px;
+    color: #a20409;
+    text-align: center;
+}
+H2{
+    font-size: 30px;
+    color: #a20409;
+    text-align: center;
+    
+}
+h3  {
+    font-size: 20px;
+    color: #a20409;
+    text-align: center;
+}
+
+.videotext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+.car-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.car-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 15px;
+}
+
+.car-info h3 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.brand {
+    color: gray;
+    font-size: 14px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.price span {
+    color: blue;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.book, .details {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.book {
+    background: blue;
+    color: white;
+}
+
+.details {
+    background: green;
+    color: white;
+}
+
+.book:hover {
+    background: darkblue;
+}
+
+.details:hover {
+    background: darkgreen;
+}
+
+/* .booking-form {
+    background: white;
+    padding: 20px;
+    border:1px solid #020202;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 80px;
+}
+.booking-form label {
+    font-weight: bold;
+  width: 50px;
+}
+.booking-form input, .booking-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.full-width {
+    grid-column: span 2;
+}
+.booking-form button {
+    background: #FFC107;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.booking-form button:hover {
+    background: #e0a800;
+} */
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .navlinks {
@@ -146,7 +325,22 @@ background-color: #a20409;
         text-align: center;
         padding: 10px 0;
     }
+h1{
 
+    font-size: 20px;
+    color: #a20409;
+    text-align: center;
+}
+h2{
+    font-size: 20px;
+    color: #a20409;
+    text-align: center;
+}
+.swiper-slide{
+    width: 100%;
+    height: 200px;
+    margin: 10px;
+}
     .navlinks.active {
         display: flex; /* Show when active */
     }
@@ -194,5 +388,17 @@ button {
     height: 100%;
     object-fit: cover; /* Maintain aspect ratio */
 }
+.security{
+ display: flex;
+    flex-direction: column;
 
+    align-items: center;
+    justify-content: center;
+}
+.car-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 }
