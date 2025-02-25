@@ -32,9 +32,9 @@ nav {
 
 /* Company name styles */
 .companyname {
-    font-size: 29px;
-    font-weight: bold;
-    color: #a20409;
+    font-size: 25px;
+    font-weight: normal;
+    color: #faf9f9;
 
 }
 
@@ -54,10 +54,10 @@ nav ul li {
 /* Navigation links */
 .navlinks  li a {
     text-decoration: none;
-    color: #a20409;
-    font-size: 26px;
+    color: #fdfafa;
+    font-size: 20px;
     /* background-color: #ffe642; */
-    font-weight: bold;
+    font-weight: normal;
     /* border: 2px solid #ff7900; */
   padding: 10px;
   border-radius: 10px;
@@ -95,9 +95,10 @@ button {
 
 /* Login Button */
 .loginbtn {
-background-color: #a20409;
+background-color: #040404;
     color: #fdfdfc;
     border: 2px solid #a20409;
+    /* a20409 */
     border-radius: 5px;
 }
 
@@ -110,7 +111,7 @@ background-color: #a20409;
 
 /* Sign Up Button */
 .signupbtn {
-    background-color: #a20409;
+    background-color: #0c0c0c;
     color: #fdfdfc;
     border: 2px solid #a20409;
     border-radius: 5px;
@@ -181,13 +182,16 @@ h3  {
 
 .videotext {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 15%;
+    left: 20%;
     transform: translate(-50%, -50%);
-    color: white;
-    font-size: 36px;
-    font-weight: bold;
+
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+.videotext h1{
+    font-size: 30px;
+    color: white;
+    font-weight: normal;
 }
 .car-section {
     display: flex;
