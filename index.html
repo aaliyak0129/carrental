@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./home.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
   rel="stylesheet"
@@ -59,6 +60,7 @@
      <div class="videotext">
         <div>
           <h1 data-aos="fade-right" data-aos-duration="2000">WELCOME TO DESTINY <div data-aos="fade-left" data-aos-duration="3000">DRIVE RENTALS</div></h1>
+          <p data-aos="fade-up" data-aos-duration="3000">Better Way to Rent Your Perfect Cars.</p>
       </div>
     </div>
   </div>
@@ -174,11 +176,6 @@
       <div class="swiper-slide ">
         <div class="car-box">
         <img src="./image/c1.webp"/>
-        <!-- <h2><i class="fas fa-car icon"><h2></h2></i> BMW Z4</h2>
-                <p class="details"><i class="fas fa-cogs icon"></i> Coupe • 2007</p>
-                <p class="price"><i class="fas fa-rupee-sign icon"></i> 50,000/day</p>
-                <p class="details"><i class="fas fa-road icon"></i> 15K mi • <i class="fas fa-gas-pump icon"></i> 4.0 L TDI+ • Gasoline • Automatic</p>
-                <p class="details"><i class="fas fa-map-marker-alt icon"></i> City:Bhopal | <i class="fas fa-user icon"></i> Agent: Fiona Lewis</p> -->
       </div>
     </div>
       <div class="swiper-slide">
@@ -208,6 +205,7 @@
     </div>
     <div class="swiper-pagination"></div>
   </div>
+</div>
   <div><h1>book your ride now</h1></div>
 
   <div class="car-section">
@@ -219,8 +217,8 @@
             <p class="brand">Cheverolet</p>
             <p class="price"><span>₹500</span> /day</p>
             <div class="buttons">
-                <button class="book">Book now</button>
-                <button class="details">Details</button>
+              <a href=""><button class="book">Book now</button></a>              
+              <a href="./details.html"><button class="details">Details</button></a>
             </div>
         </div>
       </div>
@@ -235,8 +233,10 @@
             <p class="brand">Subaru</p>
             <p class="price"><span>₹500</span> /day</p>
             <div class="buttons">
-                <button class="book">Book now</button>
-                <button class="details">Details</button>
+               <a href=""><button class="book">Book now</button></a>
+            
+               <a href="./details.html"><button class="details">Details</button></a>
+        
             </div>
             </div>
         </div>
@@ -302,59 +302,15 @@
   </div>
 </div>
 </div>
-
-<div class="car-section">
-  <div class="car-card">
-    <div data-aos="fade-up"data-aos-duration="2000">
-      <img src="./image/c8.webp" alt="Mercedes Grand Sedan">
-      <div class="car-info">
-          <h3>Mercedes Grand Sedan</h3>
-          <p class="brand">Cheverolet</p>
-          <p class="price"><span>₹500</span> /day</p>
-          <div class="buttons">
-              <button class="book">Book now</button>
-              <button class="details">Details</button>
-          </div>
-      </div>
-    </div>
-  </div>
-  <div class="car-card">
-    <div data-aos="fade-up"data-aos-duration="2000">
-      <img src="./image/c9.webp" alt="Mercedes Grand Sedan">
-      <div class="car-info">
-          <h3>Mercedes Grand Sedan</h3>
-          <p class="brand">Cheverolet</p>
-          <p class="price"><span>₹500</span> /day</p>
-          <div class="buttons">
-              <button class="book">Book now</button>
-              <button class="details">Details</button>
-          </div>
-      </div>
-    </div>
-  </div>
-  <div class="car-card">
-    <div data-aos="fade-up"data-aos-duration="2000">
-      <img src="./image/c1.webp" alt="Mercedes Grand Sedan">
-      <div class="car-info">
-          <h3>Mercedes Grand Sedan</h3>
-          <p class="brand">Cheverolet</p>
-          <p class="price"><span>₹500</span> /day</p>
-          <div class="buttons">
-              <button class="book">Book now</button>
-              <button class="details">Details</button>
-          </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
   <div class="about">
        <img src="./image/main.jpg" alt="">
     <div class="aboutdetails">
+      <div data-aos="zoom-in" data-aos-duration="2000">
       <h2>About Us</h2>
       <h3>DRIVE BEYOND LIMITS,EXPLORE BEYOND BORDERS</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum, purus vel tristique consectetur, nunc felis consequat neque, vel pulvinar velit velit vel neque. Nulla facilisi. Nulla facilisi. Nulla facilisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellendus sunt ut a, doloribus nisi accusamus labore ipsa? Illo nisi optio quasi quis facere quidem.</p>
     </div>
+  </div>
     </div>
     <div>
       <div id="bg">
@@ -445,6 +401,27 @@
 </div> 
 </div>
 </div>
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-logo">
+          <h2>Car Rentals</h2>
+      </div>
+      <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+      </div>
+      <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p class="footer-copy">© 2025 Car Rentals. All Rights Reserved.</p>
+  </div>
+</footer>
+
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

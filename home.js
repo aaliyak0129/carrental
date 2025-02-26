@@ -26,8 +26,8 @@ var swiper = new Swiper(".cube-slider", {
     minWidth: 200.00,
     scale: 1.00,
     scaleMobile: 1.00,
-    color: 0x6d99bd,
-    shininess: 21.00,
-    waveHeight: 18.00,
-    zoom: 1.09
+    color: 0xf2303c,
+    waveHeight: 24.50,
+    waveSpeed: 0.95,
+    zoom: 0.76
   }) 

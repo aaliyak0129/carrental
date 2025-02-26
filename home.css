@@ -193,6 +193,10 @@ h3  {
     color: white;
     font-weight: normal;
 }
+.videotext p{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.936);
+}
 .car-section {
     display: flex;
     gap: 20px;
@@ -413,7 +417,7 @@ margin-top: 15%;
     width: 80%;
   }
    h5 {
-     color: #0419a2;
+     color: #fdfbfb;
   text-align: center;
   font-size: 50px;}
   h2 {
@@ -513,6 +517,75 @@ margin-top: 50px;
 .container p{
     color: #a20409;
 }
+/* Footer */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: rgba(170, 44, 44, 0.967);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    color: #fcfcfc;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #00bcd4;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: #00bcd4;
+}
+
+.footer-copy {
+    margin-top: 15px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-links a {
+        margin: 5px 0;
+    }
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .navlinks {
