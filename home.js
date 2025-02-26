@@ -14,7 +14,7 @@ var swiper = new Swiper(".cube-slider", {
       el: ".swiper-pagination",
     },
     autoplay: {
-      delay: 2500,
+      delay: 1500,
     },
   });
   VANTA.WAVES({

@@ -237,7 +237,7 @@ h3  {
 }
 
 .price span {
-    color: blue;
+    color: #a20409;
 }
 
 .buttons {
@@ -256,21 +256,22 @@ h3  {
 }
 
 .book {
-    background: blue;
-    color: white;
-}
+    background: rgb(255, 255, 255);
+    color: #a20409;}
 
 .details {
-    background: green;
+    background:#a20409;
     color: white;
 }
 
 .book:hover {
-    background: darkblue;
+    background: #a20409;
+    color: #f8f9fa;
 }
 
 .details:hover {
-    background: darkgreen;
+    background: #2c2a2a;
+    color: #fbf5f5;
 }
 
 /* .booking-form {
@@ -441,6 +442,7 @@ margin-top: 15%;
 .client-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #a20409;
 }
 
 .client-card img {
@@ -457,9 +459,59 @@ margin-top: 15%;
 }
 
 .client-position {
-    color: blue;
+    color: #a20409;
     font-size: 14px;
     text-decoration: none;
+}
+.container {
+    max-width: 800px;
+      /* background: rgba(145, 143, 143, 0.7); */
+    padding: 30px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.container h2 {
+    color: #a20409;
+}
+.experience{
+margin-top: 50px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 5px solid #a20409;
+
+}
+.bar {
+    background: #ccc;
+    border-radius: 5px;
+    height: 10px;
+    margin: 10px 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.bar span {
+    display: block;
+    height: 100%;
+    background: #a20409;
+    border-radius: 5px;
+}
+.percentage {
+    position: absolute;
+    right: 10px;
+    top: -5px;
+    font-size: 14px;
+    color: #a20409;
+}
+.bar-container {
+    position: relative;
+    text-align: left;
+}
+.container p{
+    color: #a20409;
 }
 /* Responsive Design */
 @media screen and (max-width: 768px) {
