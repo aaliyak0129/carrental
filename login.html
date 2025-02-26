@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+   
     <link rel="stylesheet" href="login.css"><title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
 
     <div class="container">
+        <div data-aos="flip-right"data-aos-duration="3000">
+
         <div class="login-box">
             <h2 class="title">LOGIN</h2>
             <form>
@@ -26,8 +31,13 @@
             <p class="signup-text">Don't have an account? <a href="./signup.html" class="signup-link">Sign up</a></p>
         </div>
     </div>
-    <script src="./login.js"></script>
+    </div>
 
+    <script src="./login.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 </html>

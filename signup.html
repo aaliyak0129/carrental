@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Form</title>
     <link rel="stylesheet" href="./signup.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 </head>
 <body>
@@ -12,15 +13,18 @@
 <div class="container">
     <!-- Left Section (Car Image) -->
     <div class="image-section">
+        <div data-aos="fade-right"data-aos-duration="3000">
         <img src="./image/d7123955-9f60-4752-87ca-49e08ba639a8.webp" alt="Car Image">
     </div>
-
+</div>
     <!-- Right Section (Form) -->
     <div class="form-section">
+        <div data-aos="fade-left"data-aos-duration="3000">
+
         <h1>Sign Up</h1>
         <p>Enter your details to SIGN UP</p>
  <form>
-      
+
         <p id="errname"></p>
         ENTER NAME: <input type="text" id="name" placeholder="Enter your name">  <br> 
         <p id="erremail"></p>
@@ -36,8 +40,11 @@
         </form>
     </div>
 </div>
-
+</div>
 <script src="./signup.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 </html>
