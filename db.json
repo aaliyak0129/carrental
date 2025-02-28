@@ -1,0 +1,14 @@
+{
+    "car":[
+        {
+            "name": "aaliya",
+            "email": "ali@gmail.com",
+            "phone": "1234567890",
+            "date": "2021-09-01",
+            "dropoff": "2021-09-02",
+            "car": "audi",
+            "price": 200000,
+            "id": "1"
+        },
+    ]
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <video autoplay muted loop id="video-bg">
+        <source src="./extra/v1.mp4" type="video/mp4">
+    </video>
+    <form>
+Enter your name: <input type="text" name="name"><br> <br>
+Enter your email: <input type="text" name="email"><br><br>
+Enter your phone number: <input type="number" name="phone"><br> <br>
+Pick up date: <input type="date" name="date"><br> <br>
+Dropoff date: <input type="date" name="dropoff"><br> <br>
+Select car: <select name="car">
+    <option value="audi">Audi</option>
+    <option value="bmw">BMW</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="volvo">Volvo</option>
+    <option value="volvo">Toyota</option> <br><br>
+    price: <input type="number" name="price"> <br><br>
+    <input type="submit" value="book" onclick="return ins()">
+
+ </form>
+    <script src="./book.js"></script>
+</body>
+</html>
