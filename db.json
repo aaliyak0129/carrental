@@ -1,37 +1,48 @@
 {
-    "car": [
-      {
-        "name": "aaliya khan",
-        "age": 20,
-        "phone": 468489465,
-        "aadhar": "97972983479834y4",
-        "date":01-01-2005,
-        "dropoff": "05-05-2005",
-        "car": "audi",
-        "person": "2",
-        "id": "fe24"
-      },
-      {
-        "name": "zaid khan",
-        "age": 20,
-        "phone": 468489465,
-        "aadhar": "97972983479834y4",
-        "date":01-01-2005,
-        "dropoff": "05-05-2005",
-        "car": "audi",
-        "person": "2",
-        "id": "ze24"
-      },
-      {
-     "name": "aaliya khan",
-        "age": 20,
-        "phone": 468489465,
-        "aadhar": "97972983479834y4",
-        "date":01-01-2005,
-        "dropoff": "05-05-2005",
-        "car": "audi",
-        "person": "2",
-        "id": "ae24"
-      }
-    ]
-  }
+  "car": [
+    {
+      "name": "zaid khan",
+      "phone": 468489465,
+      "aadhar": "97972983479834y4",
+      "date": "01-01-2005",
+      "dropoff": "05-05-2005",
+      "car": "audi",
+      "person": "2",
+      "id": "ze24"
+    },
+    {
+      "name": "aaliya khan",
+      "phone": 468489465,
+      "aadhar": "97972983479834y4",
+      "date": "01-01-2005",
+      "dropoff": "05-05-2005",
+      "car": "audi",
+      "person": "2",
+      "id": "ae24"
+    },
+    {
+      "id": "d0df",
+      "name": "aaliya ",
+      "phone": "9752350277",
+      "aadhar": "56565657",
+      "number": "7400514849",
+      "date": "2025-03-04",
+      "dropoff": "2025-03-05",
+      "car": "bmw",
+      "people": "3",
+      "price": 5000
+    },
+    {
+      "id": "8fba",
+      "name": "saad",
+      "phone": "5464135498652",
+      "adhar": "",
+      "number": "89461532230",
+      "date": "2025-03-19",
+      "dropoff": "2025-03-20",
+      "car": "audi",
+      "people": "4",
+      "price": 5000
+    }
+  ]
+}
