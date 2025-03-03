@@ -87,7 +87,7 @@ select {
 
 input[type="submit"] {
     padding: 10px 20px;
-    background: #007bff;
+    background: #ff04004d;
     color: white;
     border: none;
     border-radius: 5px;
@@ -98,7 +98,7 @@ input[type="submit"] {
 
 /* Submit button hover effect */
 input[type="submit"]:hover {
-    background: #0056b3;
+    background: #fb0101;
 }
 
 /* Responsive Design for smaller screens */
