@@ -11,21 +11,30 @@
         <source src="./extra/v1.mp4" type="video/mp4">
     </video>
     <form>
-Enter your name: <input type="text" name="name"><br> <br>
-Enter your email: <input type="text" name="email"><br><br>
-Enter your phone number: <input type="number" name="phone"><br> <br>
-Pick up date: <input type="date" name="date"><br> <br>
-Dropoff date: <input type="date" name="dropoff"><br> <br>
+Enter your name: <input type="text" name="name" placeholder="enter your name"><br> <br>
+Enter your email: <input type="text" name="email" placeholder="enter your email"><br><br>
+Enter your phone number: <input type="number" name="phone" placeholder="enter your phone number"><br> <br>
+Enter your aadhar number: <input type="number" name="aadhar"><br> <br>
+Enter your driving license number: <input type="number" name="number" placeholder="Driving license"><br> <br>
+Pick up date: <input type="date" name="date" placeholder="Pick up date"><br> <br>
+Dropoff date: <input type="date" name="dropoff" placeholder="Dropoff date"><br> <br>
 Select car: <select name="car">
     <option value="audi">Audi</option>
     <option value="bmw">BMW</option>
     <option value="mercedes">Mercedes</option>
-    <option value="volvo">Volvo</option>
+    <option value="volvo">Honda</option>
     <option value="volvo">Toyota</option> <br><br>
+   </select>
+select people: <select name="people">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option><br><br></select>
     price: <input type="number" name="price"> <br><br>
-    <input type="submit" value="book" onclick="return ins()">
-
- </form>
+    <input type="submit" value="Book Now" onclick="return userinput()" >
+</form>
     <script src="./book.js"></script>
 </body>
 </html>

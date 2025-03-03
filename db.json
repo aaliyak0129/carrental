@@ -1,14 +1,37 @@
 {
-    "car":[
-        {
-            "name": "aaliya",
-            "email": "ali@gmail.com",
-            "phone": "1234567890",
-            "date": "2021-09-01",
-            "dropoff": "2021-09-02",
-            "car": "audi",
-            "price": 200000,
-            "id": "1"
-        },
+    "car": [
+      {
+        "name": "aaliya khan",
+        "age": 20,
+        "phone": 468489465,
+        "aadhar": "97972983479834y4",
+        "date":01-01-2005,
+        "dropoff": "05-05-2005",
+        "car": "audi",
+        "person": "2",
+        "id": "fe24"
+      },
+      {
+        "name": "zaid khan",
+        "age": 20,
+        "phone": 468489465,
+        "aadhar": "97972983479834y4",
+        "date":01-01-2005,
+        "dropoff": "05-05-2005",
+        "car": "audi",
+        "person": "2",
+        "id": "ze24"
+      },
+      {
+     "name": "aaliya khan",
+        "age": 20,
+        "phone": 468489465,
+        "aadhar": "97972983479834y4",
+        "date":01-01-2005,
+        "dropoff": "05-05-2005",
+        "car": "audi",
+        "person": "2",
+        "id": "ae24"
+      }
     ]
-}
+  }
