@@ -108,14 +108,13 @@ let finaleupdate=(id)=>{
             dropoff: inpdropoff,
             car: inpcar,
             people: inppeople,
-            
             price: 5000
           
 
         })
     })
 
-    // location.href = "bookshow.html" 
+    location.href = "bookshow.html" 
     return false
 
 }
