@@ -82,40 +82,40 @@ let formfill=async(id)=>{
 
 
 
-let finaleupdate=(id)=>{
-    let inpname = document.querySelector("#upname").value;
-    let inpphone = document.querySelector("#upphone").value;
-    let inpadhar = document.querySelector("#upadhar").value;
-    let inpnumber = document.querySelector("#upnumber").value;
-    let inpdate = document.querySelector("#update").value;
-    let inpdropoff = document.querySelector("#updropoff").value;
-    let inpcar = document.querySelector("#upcar").value;
-    let inppeople = document.querySelector("#uppeople").value;
+// let finaleupdate=(id)=>{
+//     let inpname = document.querySelector("#upname").value;
+//     let inpphone = document.querySelector("#upphone").value;
+//     let inpadhar = document.querySelector("#upadhar").value;
+//     let inpnumber = document.querySelector("#upnumber").value;
+//     let inpdate = document.querySelector("#update").value;
+//     let inpdropoff = document.querySelector("#updropoff").value;
+//     let inpcar = document.querySelector("#upcar").value;
+//     let inppeople = document.querySelector("#uppeople").value;
   
 
-    let url =`http://localhost:3000/car/${id}`
-    fetch(url, { 
-        method: "PUT",
-        headers:{
-            "Content-type": "application/json"
-        },
-        body: JSON.stringify({
-            name: inpname,
-            phone: inpphone,
-            adhar: inpadhar,
-            number: inpnumber,
-            date: inpdate,
-            dropoff: inpdropoff,
-            car: inpcar,
-            people: inppeople,
-            price: 5000
+//     let url =`http://localhost:3000/car/${id}`
+//     fetch(url, { 
+//         method: "PUT",
+//         headers:{
+//             "Content-type": "application/json"
+//         },
+//         body: JSON.stringify({
+//             name: inpname,
+//             phone: inpphone,
+//             adhar: inpadhar,
+//             number: inpnumber,
+//             date: inpdate,
+//             dropoff: inpdropoff,
+//             car: inpcar,
+//             people: inppeople,
+//             price: 5000
           
 
-        })
-    })
+//         })
+//     })
 
-    location.href = "bookshow.html" 
-    return false
+//     location.href = "bookshow.html" 
+//     return false
 
-}
+// }
     
