@@ -72,7 +72,7 @@ let delette=(id)=>{
         body:JSON.stringify(
             {name:inpname,
             phone:inpphone,
-            adhar:inpaadhar,
+            aadhar:inpaadhar,
             number:inpnumber,
             date:inpdate,
             dropoff:inpdropoff,
@@ -93,15 +93,18 @@ let formfill=async(id)=>{
     console.log(data);
     
     let formdata=`
-    enter your name:<input type="text" id="upname" value="${data.name}"><br> <br>
-    enter your phone:<input type="text" id="upphone" value="${data.phone}"><br> <br>
-    enter your adhar:<input type="text" id="upaadhar" value="${data.aadhar}"><br> <br>
-    enter your number:<input type="text" id="upnumber" value="${data.number}"><br> <br>
-    enter your date:<input type="text" id="update" value="${data.date}"><br> <br>
-    enter your dropoff:<input type="text" id="updropoff" value="${data.dropoff}"><br> <br>
-    enter your car:<input type="text" id="upcar" value="${data.car}"><br> <br>
-    enter your people:<input type="text" id="uppeople" value="${data.people}"><br> <br>
+
+    <div class="aaliya"data-aos="flip-right"data-aos-duration="2000">
+   Enter your name: <input type="text" id="upname" value="${data.name}"><br> <br>
+    Enter your phone: <input type="text" id="upphone" value="${data.phone}"><br> <br>
+    Enter your aadhar: <input type="text" id="upaadhar" value="${data.aadhar}"><br> <br>
+    Enter your number: <input type="text" id="upnumber" value="${data.number}"><br> <br>
+    Enter your date: <input type="text" id="update" value="${data.date}"><br> <br>
+    Enter your dropoff: <input type="text" id="updropoff" value="${data.dropoff}"><br> <br>
+    Enter your car: <input type="text" id="upcar" value="${data.car}"><br> <br>
+    Enter your people: <input type="text" id="uppeople" value="${data.people}"><br> <br>
     <button onclick="finaleupdate('${data.id}')">update</button>
+    </div>
     `
     document.querySelector("#show").innerHTML=formdata
 }
@@ -128,7 +131,7 @@ let finaleupdate=(id)=>{
         body: JSON.stringify({
             name: inpname,
             phone: inpphone,
-            adhar: inpadhar,
+            aadhar: inpadhar,
             number: inpnumber,
             date: inpdate,
             dropoff: inpdropoff,
