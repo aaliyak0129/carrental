@@ -4,7 +4,34 @@ let res= await fetch(url)
 let data=await res.json()
 
 console.log(data)
+// Datashow(data)
+paginationData(data)
+}
+let searchh=async()=>{
+    let searchinp=document.querySelector("#searchinp").value.toLowerCase()
+    let url='http://localhost:3000/car'
+    let res= await fetch(url,{method:'GET',})
+    let data=await res.json()
+let filterData=data.filter((e)=>{
+    return e.name.toLowerCase().includes(searchinp)
+})
+paginationData(filterData)
+}
+let paginationData=(data)=>{
+    $('#pagin').pagination({
+        dataSource:data,
+        pageSize: 5,
+        showGoInput: true,
+        showGoButton: true,
+        callback: function(data, pagination) {
+        Datashow(data)
+        }
+    })
+    
+}
+let Datashow=(data)=>{
 let display=document.querySelector("#display")
+display.innerHTML=""
 data.map((e)=>{
     display.innerHTML+=`<tr>
         <td>${e.name}</td>
@@ -67,55 +94,55 @@ let formfill=async(id)=>{
     console.log(data);
     
     let formdata=`
-    enter your name:<input type="text" id="name" value="${data.name}"><br> <br>
-    enter your phone:<input type="text" id="phone" value="${data.phone}"><br> <br>
-    enter your adhar:<input type="text" id="aadhar" value="${data.adhar}"><br> <br>
-    enter your number:<input type="text" id="number" value="${data.number}"><br> <br>
-    enter your date:<input type="text" id="date" value="${data.date}"><br> <br>
-    enter your dropoff:<input type="text" id="dropoff" value="${data.dropoff}"><br> <br>
-    enter your car:<input type="text" id="car" value="${data.car}"><br> <br>
-    enter your people:<input type="text" id="people" value="${data.people}"><br> <br>
-    <button onclick="update('${data.id}')">update</button>
+    enter your name:<input type="text" id="upname" value="${data.name}"><br> <br>
+    enter your phone:<input type="text" id="upphone" value="${data.phone}"><br> <br>
+    enter your adhar:<input type="text" id="upaadhar" value="${data.aadhar}"><br> <br>
+    enter your number:<input type="text" id="upnumber" value="${data.number}"><br> <br>
+    enter your date:<input type="text" id="update" value="${data.date}"><br> <br>
+    enter your dropoff:<input type="text" id="updropoff" value="${data.dropoff}"><br> <br>
+    enter your car:<input type="text" id="upcar" value="${data.car}"><br> <br>
+    enter your people:<input type="text" id="uppeople" value="${data.people}"><br> <br>
+    <button onclick="finaleupdate('${data.id}')">update</button>
     `
     document.querySelector("#show").innerHTML=formdata
 }
 
 
 
-// let finaleupdate=(id)=>{
-//     let inpname = document.querySelector("#upname").value;
-//     let inpphone = document.querySelector("#upphone").value;
-//     let inpadhar = document.querySelector("#upadhar").value;
-//     let inpnumber = document.querySelector("#upnumber").value;
-//     let inpdate = document.querySelector("#update").value;
-//     let inpdropoff = document.querySelector("#updropoff").value;
-//     let inpcar = document.querySelector("#upcar").value;
-//     let inppeople = document.querySelector("#uppeople").value;
+let finaleupdate=(id)=>{
+    let inpname = document.querySelector("#upname").value;
+    let inpphone = document.querySelector("#upphone").value;
+    let inpadhar = document.querySelector("#upaadhar").value;
+    let inpnumber = document.querySelector("#upnumber").value;
+    let inpdate = document.querySelector("#update").value;
+    let inpdropoff = document.querySelector("#updropoff").value;
+    let inpcar = document.querySelector("#upcar").value;
+    let inppeople = document.querySelector("#uppeople").value;
   
 
-//     let url =`http://localhost:3000/car/${id}`
-//     fetch(url, { 
-//         method: "PUT",
-//         headers:{
-//             "Content-type": "application/json"
-//         },
-//         body: JSON.stringify({
-//             name: inpname,
-//             phone: inpphone,
-//             adhar: inpadhar,
-//             number: inpnumber,
-//             date: inpdate,
-//             dropoff: inpdropoff,
-//             car: inpcar,
-//             people: inppeople,
-//             price: 5000
+    let url =`http://localhost:3000/car/${id}`
+    fetch(url, { 
+        method: "PUT",
+        headers:{
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify({
+            name: inpname,
+            phone: inpphone,
+            adhar: inpadhar,
+            number: inpnumber,
+            date: inpdate,
+            dropoff: inpdropoff,
+            car: inpcar,
+            people: inppeople,
+            price: 5000
           
 
-//         })
-//     })
+        })
+    })
 
-//     location.href = "bookshow.html" 
-//     return false
+    location.href = "bookshow.html" 
+    return false
 
-// }
+}
     
