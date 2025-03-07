@@ -9,7 +9,7 @@ paginationData(data)
 let searchh=async()=>{
     let searchinp=document.querySelector("#searchinp").value.toLowerCase()
     let url='http://localhost:3000/car'
-    let res= await fetch(url,{method:'GET',})
+    let res= await fetch(url,{method:'GET'})
     let data=await res.json()
 let filterData=data.filter((e)=>{
     return e.name.toLowerCase().includes(searchinp)
@@ -43,11 +43,35 @@ data.map((e)=>{
 <td>${e.people}</td>
 <td>${e.price}</td>
         <td>${e.price*e.people}</td>
-        <td onclick="delette('${e.id}')">Cancel</td>
+        <td onclick="confirmdelete('${e.id}')">Cancel</td>
     <td onclick="formfill('${e.id}')">Update</td>
     </tr>`
    
 })
+}
+
+
+let confirmdelete=(id) => {
+
+    Swal.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, delete it!"
+      }).then((result) => {
+        if (result.isConfirmed) {
+            delette(id)
+          Swal.fire({
+            title: "Deleted!",
+            text: "Your file has been deleted.",
+            icon: "success"
+          });
+        }
+      });
+      
 }
 let delette=(id)=>{
     let url='http://localhost:3000/car/'+id

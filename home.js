@@ -31,3 +31,8 @@ var swiper = new Swiper(".cube-slider", {
     waveSpeed: 0.95,
     zoom: 0.76
   }) 
+  let logout=()=>{
+    localStorage.removeItem("name")
+    localStorage.removeItem("password")
+    location.href="signup.html"
+  }
