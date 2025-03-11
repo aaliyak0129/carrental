@@ -668,7 +668,10 @@ button {
     text-transform: uppercase;
     box-shadow: 0 0 5px rgb(94, 93, 93), 0 0 10px rgb(229, 104, 104);
 }
+.navbuttons{
+    width: 100%;
 
+}
 /* Login & Sign Up Button */
 .loginbtn, .signupbtn {
     background-color: #a20409;
