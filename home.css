@@ -517,29 +517,10 @@ margin-top: 50px;
 .container p{
     color: #a20409;
 }
-.cube-slider {
-display: none;
 
-    }
 
-  .swiper-slide img {
+ 
 
-   display: none;
-  }
-  .cube-caption {
- display: none;
-    /* Adjust font size for mobile */
-   
-  }
-  .swiper-wrapper{
-    display: none;
-  }
-  .swiper-slide cube-slide{
-    display: none;
-  }
-  #bg{
-    display: none;
-  }
 /* Footer */
 .footer {
     position: relative;
@@ -732,16 +713,8 @@ button {
     width: 100%;
     text-align: center;
 }
-.about img{
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
-}
-.aboutdetails p{
-    font-size: 10px;
-    text-align: center;
-    color: #a20409;
-}
+
+
 .aboutdetails h2{
     font-size: 20px;
     text-align: center;
