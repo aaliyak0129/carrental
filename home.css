@@ -517,6 +517,16 @@ margin-top: 50px;
 .container p{
     color: #a20409;
 }
+.cube-caption {
+    font-size: 1.1rem; /* Slightly larger font for tablets */
+    padding: 10px;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
+
 /* Footer */
 .footer {
     position: relative;
