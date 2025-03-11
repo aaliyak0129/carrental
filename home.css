@@ -517,16 +517,19 @@ margin-top: 50px;
 .container p{
     color: #a20409;
 }
-.cube-caption {
-    font-size: 1.1rem; /* Slightly larger font for tablets */
-    padding: 10px;
-  }
-  
-  .swiper-slide img {
-    width: 100%;
-    height: auto;
+.cube-slider {
+    height: 200px; /* Reduce the height for mobile */
   }
 
+  .swiper-slide img {
+    width: 100%; /* Ensure images take full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .cube-caption {
+    font-size: 1rem; /* Adjust font size for mobile */
+    padding: 8px;
+  }
 /* Footer */
 .footer {
     position: relative;
