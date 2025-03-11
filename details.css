@@ -112,13 +112,5 @@ text-decoration: none;
     }
   }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-justify-content: center;
-        align-items: center;
-      
-    }
-}
+
+
