@@ -102,7 +102,7 @@ let delette=(id)=>{
             dropoff:inpdropoff,
             car:inpcar,
             people:inpperson,
-            price:5000,
+            price:20000,
         })
         }
         )
